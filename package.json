@@ -1,0 +1,28 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "A project to continue building experience with JavaScript and webpack",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaun-b1/restaurant-page.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "webpack"
+  ],
+  "author": "Shaun MacWilliam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaun-b1/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/shaun-b1/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
