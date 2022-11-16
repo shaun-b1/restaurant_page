@@ -3,3 +3,37 @@ body {
     background-position: center top;
     background-size: 100vw 100vh;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+header > h1 {
+    font-size: 2rem;
+}
+
+header > nav > button{
+    margin: 0 1rem;
+}
+
+footer {
+    width: 100vw;
+    padding: 9.5px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background: black;
+    opacity: 0.8;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer p {
+    color: white;
+  }
