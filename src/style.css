@@ -1,5 +1,6 @@
 :root {
-  --base-color: #5bf870
+  --green-color: #5bf870;
+  --blue-color: #a5a5ff;
 }
 
 @font-face {
@@ -12,7 +13,7 @@ body {
     background-position: center top;
     background-size: 100vw 100vh;
     font-family: 'aurebesh';
-    color: var(--base-color);
+    color: var(--blue-color);
     animation: textShadow 1.6s infinite;
 }
 
