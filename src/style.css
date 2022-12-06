@@ -28,9 +28,29 @@ header > h1 {
     font-size: 2rem;
 }
 
-header > nav > button{
-    margin: 0 1rem;
-    font-family: 'aurebesh';
+header > nav {
+  display: flex;
+  justify-content: center;
+}
+
+header > nav > :first-child {
+  border-color: black;
+  border-style: solid;
+  border-width: 0.5rem 0 0.5rem 0.5rem;
+}
+
+header > nav > :last-child {
+  border-left: 0;
+}
+
+header > nav > button {
+  margin: 0;
+  font-family: 'aurebesh';
+  padding: 1rem 1.3rem;
+  border: 0.5rem solid black;
+  box-shadow: inset 0 0 10px 0 #000;
+  cursor: pointer;
+  outline: none;
 }
 
 footer {
@@ -182,7 +202,7 @@ footer p {
     text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
   }
 }
-body::after {
+/* body::after {
   content: " ";
   display: block;
   position: absolute;
@@ -208,4 +228,4 @@ body::before {
   z-index: 2;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
-}
+} */
