@@ -94,7 +94,7 @@ header > nav > button.active {
   color: aliceblue;
 }
 
-#main-page-content {
+#home-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,15 +110,15 @@ header > nav > button.active {
   outline: 4px solid black;
 }
 
-#main-page-content > * {
+#home-content > * {
   padding: 1.5rem 4rem;
 }
 
-#main-page-content h2 {
+#home-content h2 {
   font-size: 1.3rem;
 }
 
-#main-page-content p {
+#home-content p {
   font-size: 0.8rem;
 }
 
