@@ -17,7 +17,9 @@ const pageConstructor = (() => {
 
     //functions
     const createPage = (pageName) => contentWindow.appendChild(pages[pageName])
-    const deletePage = () => contentWindow.removeChild(contentWindow.firstChild)
+    const deletePage = () => {while(contentWindow.firstChild) { 
+        contentWindow.removeChild(contentWindow.firstChild)
+    };}
 
     return { createPage, deletePage }
 })();

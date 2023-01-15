@@ -10,8 +10,8 @@
 
 body {
   background-image: url("./mos_eisley.jpeg");
-  background-position: center top;
-  background-size: 100vw 100vh;
+  background-position: center center;
+  background-size: cover 100vh;
   font-family: "aurebesh";
   color: var(--blue-color);
   animation: textShadow 1.6s infinite;
@@ -94,6 +94,7 @@ header > nav > button.active {
   color: aliceblue;
 }
 
+/* Home Content */
 #home-content {
   display: flex;
   justify-content: center;
@@ -120,6 +121,11 @@ header > nav > button.active {
 
 #home-content p {
   font-size: 0.8rem;
+}
+
+/* Menu Content */
+#menu-content {
+  display: grid;
 }
 
 /* Footer Styles */
