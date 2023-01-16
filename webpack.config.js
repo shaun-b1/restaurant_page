@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'production',
     entry: {
         index: './src/index.js',
         home: './src/home.js',
@@ -19,12 +20,21 @@ module.exports = {
             },
             {
                 test: /\.(png|jpeg|jpg|svg|gif)$/i,
+                generator: {
+                    filename: 'images/[hash][ext]'
+                },
                 type: 'asset/resource',
             },
             {
-                test:/\.tff$/i,
+                test: /\.tff$/i,
+                generator: {
+                    filename: 'fonts/[hash][ext]'
+                },
                 type: 'asset/resource',
             },
         ],
+    },
+    performance: {
+        hints: false,
     },
 };
