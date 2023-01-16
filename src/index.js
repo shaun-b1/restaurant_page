@@ -38,5 +38,5 @@ for (const button of buttons) {
 
 (() => {
     const contentWindow = document.getElementById('content')
-    contentWindow.appendChild(homePage())
+    contentWindow.appendChild(menu())
 })()

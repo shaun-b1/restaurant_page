@@ -12,6 +12,7 @@ body {
   background-image: url("./mos_eisley.jpeg");
   background-position: center center;
   background-size: cover 100vh;
+  background-attachment: fixed;
   font-family: "aurebesh";
   color: var(--blue-color);
   animation: textShadow 1.6s infinite;
@@ -28,7 +29,7 @@ body {
     rgba(0, 0, 0, 0.1) 100%
   );
   opacity: 0.1;
-  position: absolute;
+  position: fixed;
   bottom: 100%;
   animation: scanline 10s linear infinite;
 }
@@ -125,12 +126,32 @@ header > nav > button.active {
 
 /* Menu Content */
 #menu-content {
+  position: unset;
   display: grid;
+  width: 85%;
+  padding-top: 450px;
+  grid-template-columns: repeat(auto-fit, 45%);
+  grid-template-rows: repeat(3, 300px);
+  gap: 2rem;
+  overflow: auto;
 }
 
-/* #menu-image {
+.menu-item {
+  background: rgba(0, 0, 0, 45%);
+  border: solid 1px pink;
+}
 
-} */
+.menu-image {
+  height: 180px;
+}
+
+.menu-name {
+
+}
+
+.menu-text {
+
+}
 
 /* Footer Styles */
 footer {
@@ -262,15 +283,15 @@ footer p {
 body:before {
   content: " ";
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   background: linear-gradient(
     to bottom,
-    rgba(18, 16, 16, 0) 50%,
-    rgba(0, 0, 0, 0.25) 50%
+    rgba(18, 16, 16, 0) 20%,
+    rgba(0, 0, 0, 0.25) 20%
   );
   background-size: 100% 3px;
   z-index: 1;

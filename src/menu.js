@@ -13,36 +13,33 @@ const menuTexts = [
     "I don't want Jabba touching me either",
     "Not to be confused with Blue Milk, equally as disgusting",
     "This is fermented Bantha meat. Look it up",
-    "How cringe is this"
+    "How cringe is this?"
 ]
 
 export default function menu() {
     const menuContent = document.createElement('div') 
     menuContent.id = 'menu-content'
 
-    const menuObject = document.createElement('div')
-    menuObject.classList.add = 'menu-item'
+    for (let i = 0; i < menuImages.length; i++) {
+        const menuObject = document.createElement('div')
+        menuObject.classList.add('menu-item')
 
-    const menuImage = new Image()
-    menuImage.src = menuImages[0]
-    menuImage.classList.add = 'menu-image'
+        const menuImage = new Image()
+        menuImage.classList.add('menu-image')
+        menuImage.src = menuImages[i]
 
-    const menuName = document.createElement('div')
-    menuName.textContent = menuNames[0]
-    menuName.classList.add = 'menu-name'
+        const menuName = document.createElement('div')
+        menuName.classList.add('menu-name')
+        menuName.textContent = menuNames[i]
 
-    const menuText = document.createElement('div')
-    menuText.textContent = menuTexts[0]
-    menuText.classList.add = 'menu-text'
+        const menuText = document.createElement('div')
+        menuText.classList.add('menu-text')
+        menuText.textContent = menuTexts[i]
 
-    menuObject.append(menuImage, menuName, menuText)
+        menuObject.append(menuImage, menuName, menuText)
 
-    menuContent.appendChild(menuObject)
-
-    // for (let index = 0; index < array.length; index++) {
-    //     const element = array[index];
-        
-    // }
+        menuContent.appendChild(menuObject)
+    }
 
     return menuContent
 }
