@@ -21,7 +21,7 @@ body {
 .scanline {
   width: 100%;
   height: 100px;
-  z-index: 8;
+  z-index: 5;
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0) 0%,
@@ -36,15 +36,15 @@ body {
 
 /* Header Styles */
 header {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
-  z-index: 2;
+  z-index: 4;
 }
 
 header > h1 {
@@ -87,16 +87,18 @@ header > nav > button.active {
 
 /* Body Content */
 #content {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  display: grid;
   color: aliceblue;
 }
 
 /* Home Content */
 #home-content {
+  justify-self: center;
+  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +129,7 @@ header > nav > button.active {
 /* Menu Content */
 #menu-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
   grid-gap: 1rem;
 }
 
