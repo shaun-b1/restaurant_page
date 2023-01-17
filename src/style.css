@@ -126,23 +126,24 @@ header > nav > button.active {
 
 /* Menu Content */
 #menu-content {
-  position: unset;
   display: grid;
-  width: 85%;
-  padding-top: 450px;
-  grid-template-columns: repeat(auto-fit, 45%);
-  grid-template-rows: repeat(3, 300px);
-  gap: 2rem;
-  overflow: auto;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-gap: 1rem;
 }
 
 .menu-item {
   background: rgba(0, 0, 0, 45%);
-  border: solid 1px pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .menu-image {
-  height: 180px;
+  height: auto;
+  width: 80%;
+  align-self: center;
 }
 
 .menu-name {
