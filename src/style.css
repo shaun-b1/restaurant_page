@@ -36,21 +36,20 @@ body {
 
 /* Header Styles */
 header {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   width: 100vw;
+  height: 20vh;
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center;
+  margin: auto;
+  text-align: center;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
-  z-index: 4;
 }
 
 header > h1 {
   font-size: 2.7rem;
-  margin: 3.5rem;
-  width: 50vw;;
+
 }
 
 header > nav {
@@ -58,7 +57,6 @@ header > nav {
   gap: 0;
   grid-template-columns: 8rem 8rem 8rem;
   grid-template-rows: 4rem;
-  margin: 3.5rem;
 }
 
 header > nav > :first-child {
@@ -87,12 +85,15 @@ header > nav > button.active {
 
 /* Body Content */
 #content {
+  margin-top: 3rem;
   max-width: 65rem;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
   display: grid;
   color: aliceblue;
+  margin-bottom: 4rem;
+  z-index: 1;
 }
 
 /* Home Content */
@@ -104,7 +105,6 @@ header > nav > button.active {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 10rem;
   text-align: center;
   width: 50vw;
   background-image: url("../src/mos_eisley_cantina.jpeg");
@@ -129,31 +129,39 @@ header > nav > button.active {
 /* Menu Content */
 #menu-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 3rem;
 }
 
 .menu-item {
-  background: rgba(0, 0, 0, 45%);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .4); 
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.menu-item > * {
+  padding: 0.5rem;
 }
 
 .menu-image {
-  height: auto;
-  width: 80%;
+  width: 90%;
   align-self: center;
 }
 
 .menu-name {
-
+  font-size: 1.8rem;
 }
 
 .menu-text {
-
+  font-size: 0.8rem;
 }
 
 /* Footer Styles */
@@ -297,6 +305,6 @@ body:before {
     rgba(0, 0, 0, 0.25) 20%
   );
   background-size: 100% 3px;
-  z-index: 1;
+  z-index: -1;
   pointer-events: none;
 }
