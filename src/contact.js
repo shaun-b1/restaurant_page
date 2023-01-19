@@ -3,12 +3,18 @@ export default function contact() {
     contactContent.id = 'contact-content'
 
     const contactTitle = document.createElement('h2')
-    contactTitle.innerText = `This is but a test`
+    contactTitle.innerText = `Contact Us`
+    contactTitle.classList.add('contact-title')
 
-    const contactDroids = document.createElement('p')
-    contactDroids.innerText = `Soon, it shall be gone, like tears in the rain`
+    const contactText = document.createElement('p')
+    contactText.innerText = `Reach out to us via Comlink, or at the email address below`
+    contactTitle.classList.add('contact-text')
 
-    contactContent.append(contactTitle, contactDroids)
+    const contactAddress = document.createElement('href')
+    contactAddress.innerText = `contact@chalmunscantina.com`
+    contactTitle.classList.add('contact-email')
+
+    contactContent.append(contactTitle, contactText, contactAddress)
 
     return contactContent
 }

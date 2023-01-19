@@ -1,3 +1,5 @@
+/* Body and Root Styles */
+
 :root {
   --blue-color: #a5a5ff;
   --green-color: #5bf870;
@@ -82,7 +84,7 @@ header > nav > button.active {
   position: relative;
 }
 
-/* Body Content */
+/* Body Content Styles */
 #content {
   animation: textShadow 1.6s infinite;
   display: grid;
@@ -96,7 +98,7 @@ header > nav > button.active {
   z-index: 1;
 }
 
-/* Home Content */
+/* Home Content Styles */
 #home-content {
   margin-top: 3rem;
   justify-self: center;
@@ -127,7 +129,7 @@ header > nav > button.active {
   font-size: 0.8rem;
 }
 
-/* Menu Content */
+/* Menu Content Styles */
 #menu-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
@@ -140,7 +142,6 @@ header > nav > button.active {
   -webkit-backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, .25);
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .4); 
-  border: 4px solid black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -165,6 +166,22 @@ header > nav > button.active {
 .menu-text {
   font-size: 0.8rem;
 }
+
+/* Contact Content Styles */
+#contact-content {
+  margin-top: 3rem;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 50vw;
+  height: 50vh;
+}
+
 
 /* Footer Styles */
 footer {
@@ -279,7 +296,7 @@ footer p {
   }
 }
 
-/* Scanline animation */
+/* Scanline Animation */
 @keyframes scanline {
   0% {
     bottom: 100%;
