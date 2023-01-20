@@ -8,11 +8,13 @@ export default function contact() {
 
     const contactText = document.createElement('p')
     contactText.innerText = `Reach out to us via Comlink, or at the email address below`
-    contactTitle.classList.add('contact-text')
+    contactText.classList.add('contact-text')
 
-    const contactAddress = document.createElement('href')
-    contactAddress.innerText = `contact@chalmunscantina.com`
-    contactTitle.classList.add('contact-email')
+    const contactAddress = document.createElement('a')
+    const textContent = document.createTextNode(`contact@chalmunscantina.com`)
+    contactAddress.appendChild(textContent)
+    contactAddress.href = `mailto:contact@chalmunscantina.com`
+    contactAddress.classList.add('contact-email')
 
     contactContent.append(contactTitle, contactText, contactAddress)
 
