@@ -122,7 +122,7 @@ header > nav > button.active {
 }
 
 #home-content h2 {
-  font-size: 1.3rem;
+  font-size: minmax(0.9rem, 1.3rem);
 }
 
 #home-content p {
